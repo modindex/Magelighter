@@ -1,0 +1,172 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "textures": {
+    "particle": "minecraft:block/blast_furnace_side",
+    "blast_furnace_top": "minecraft:block/blast_furnace_top",
+    "dark_stone_side": "magelighter:block/dark_stone_side",
+    "black_concrete": "minecraft:block/black_concrete",
+    "stone": "minecraft:block/stone"
+  },
+  "display": {
+    "gui": {
+      "rotation": [ 30, 45, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0.625, 0.625, 0.625 ]
+    },
+    "ground": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 3, 0 ],
+      "scale": [ 0.25, 0.25, 0.25 ]
+    },
+    "fixed": {
+      "rotation": [ 0, 180, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "head": {
+      "rotation": [ 0, 180, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 0, 315, 0 ],
+      "translation": [ 0, 2.5, 0 ],
+      "scale": [ 0.4, 0.4, 0.4 ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [ 75, 315, 0 ],
+      "translation": [ 0, 2.5, 0 ],
+      "scale": [ 0.375, 0.375, 0.375 ]
+    }
+  },
+  "elements": [
+    {
+      "name": "Base",
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 2, 16 ],
+      "faces": {
+        "north": { "texture": "#stone", "uv": [ 0, 0, 16, 2 ] },
+        "east": { "texture": "#stone", "uv": [ 0, 0, 16, 2 ] },
+        "south": { "texture": "#stone", "uv": [ 0, 13, 16, 15 ] },
+        "west": { "texture": "#stone", "uv": [ 0, 0, 16, 2 ] },
+        "up": { "texture": "#stone", "uv": [ 0, 0, 16, 16 ] },
+        "down": { "texture": "#stone", "uv": [ 0, 0, 16, 16 ] }
+      }
+    },
+    {
+      "name": "OvenBack",
+      "from": [ 2, 2, 1 ],
+      "to": [ 15, 8, 14 ],
+      "faces": {
+        "north": { "texture": "#dark_stone_side", "uv": [ 0, 4, 13, 10 ] },
+        "east": { "texture": "#dark_stone_side", "uv": [ 3, 8, 16, 14 ] },
+        "south": { "texture": "#dark_stone_side", "uv": [ 0, 0, 13, 6 ] }
+      }
+    },
+    {
+      "name": "Rim",
+      "from": [ 0, 8, 0 ],
+      "to": [ 16, 10, 16 ],
+      "faces": {
+        "north": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 16, 2 ] },
+        "east": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 16, 2 ] },
+        "south": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 16, 2 ] },
+        "west": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 16, 2 ] },
+        "up": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 16, 16 ] },
+        "down": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 16, 16 ] }
+      }
+    },
+    {
+      "name": "OvenTop",
+      "from": [ 1, 9, 1 ],
+      "to": [ 15, 12, 15 ],
+      "faces": {
+        "north": { "texture": "#dark_stone_side", "uv": [ 1, 0, 15, 3 ] },
+        "east": { "texture": "#dark_stone_side", "uv": [ 1, 0, 15, 3 ] },
+        "south": { "texture": "#dark_stone_side", "uv": [ 1, 0, 15, 3 ] },
+        "west": { "texture": "#dark_stone_side", "uv": [ 1, 0, 15, 3 ] },
+        "up": { "texture": "#dark_stone_side", "uv": [ 1, 1, 15, 15 ] }
+      }
+    },
+    {
+      "name": "FrontLeft",
+      "from": [ 1, 2, 14 ],
+      "to": [ 5, 8, 15 ],
+      "faces": {
+        "north": { "texture": "#dark_stone_side", "uv": [ 0, 0, 4, 6 ] },
+        "east": { "texture": "#dark_stone_side", "uv": [ 1, 0, 2, 6 ] },
+        "south": { "texture": "#dark_stone_side", "uv": [ 0, 6, 4, 12 ] },
+        "west": { "texture": "#dark_stone_side", "uv": [ 15, 8, 16, 14 ] }
+      }
+    },
+    {
+      "name": "FrontRight",
+      "from": [ 11, 2, 14 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "east": { "texture": "#dark_stone_side", "uv": [ 0, 8, 1, 14 ] },
+        "south": { "texture": "#dark_stone_side", "uv": [ 12, 8, 16, 14 ] },
+        "west": { "texture": "#dark_stone_side", "uv": [ 0, 0, 1, 6 ] }
+      }
+    },
+    {
+      "name": "FrontTop",
+      "from": [ 5, 7, 14 ],
+      "to": [ 11, 8, 15 ],
+      "faces": {
+        "south": { "texture": "#blast_furnace_top", "uv": [ 7, 5, 13, 6 ] },
+        "down": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 6, 1 ] }
+      }
+    },
+    {
+      "name": "FrontBottom",
+      "from": [ 5, 2, 14 ],
+      "to": [ 11, 3, 15 ],
+      "faces": {
+        "south": { "texture": "#blast_furnace_top", "uv": [ 4, 1, 10, 2 ] },
+        "up": { "texture": "#blast_furnace_top", "uv": [ 0, 0, 6, 1 ] }
+      }
+    },
+    {
+      "name": "Stack",
+      "from": [ 5, 11, 2 ],
+      "to": [ 11, 16, 8 ],
+      "faces": {
+        "north": { "texture": "#black_concrete", "uv": [ 0, 0, 6, 5 ] },
+        "east": { "texture": "#black_concrete", "uv": [ 0, 0, 6, 5 ] },
+        "south": { "texture": "#black_concrete", "uv": [ 0, 0, 6, 5 ] },
+        "west": { "texture": "#black_concrete", "uv": [ 0, 0, 6, 5 ] },
+        "up": { "texture": "#black_concrete", "uv": [ 0, 0, 6, 6 ] }
+      }
+    },
+    {
+      "name": "GrillLeft",
+      "from": [ 6, 3, 14 ],
+      "to": [ 7, 7, 15 ],
+      "faces": {
+        "east": { "texture": "#black_concrete", "uv": [ 0, 0, 1, 4 ] },
+        "south": { "texture": "#black_concrete", "uv": [ 0, 0, 1, 4 ] },
+        "west": { "texture": "#black_concrete", "uv": [ 0, 0, 1, 4 ] }
+      }
+    },
+    {
+      "name": "GrillRight",
+      "from": [ 9, 3, 14 ],
+      "to": [ 10, 7, 15 ],
+      "faces": {
+        "east": { "texture": "#black_concrete", "uv": [ 0, 0, 1, 4 ] },
+        "south": { "texture": "#black_concrete", "uv": [ 0, 0, 1, 4 ] },
+        "west": { "texture": "#black_concrete", "uv": [ 0, 0, 1, 4 ] }
+      }
+    },
+    {
+      "name": "OvenBack",
+      "from": [ 1, 2, 1 ],
+      "to": [ 2, 8, 14 ],
+      "faces": {
+        "north": { "texture": "#dark_stone_side", "uv": [ 0, 8, 1, 14 ] },
+        "west": { "texture": "#dark_stone_side", "uv": [ 0, 8, 13, 14 ] }
+      }
+    }
+  ]
+}

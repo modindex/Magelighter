@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "magelighter:block/clerics_oven" },
+    "facing=south": { "model": "magelighter:block/clerics_oven", "y": 180 },
+    "facing=west": { "model": "magelighter:block/clerics_oven" , "y": 270 },
+    "facing=east": { "model": "magelighter:block/clerics_oven" , "y": 90 },
+    "facing=up": { "model": "magelighter:block/clerics_oven" },
+    "facing=down": { "model": "magelighter:block/clerics_oven"}
+  }
+}
