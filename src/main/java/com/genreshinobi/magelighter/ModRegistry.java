@@ -4,10 +4,14 @@ import com.genreshinobi.magelighter.blocks.ClericsOven;
 import com.genreshinobi.magelighter.inventory.container.ClericsOvenContainer;
 import com.genreshinobi.magelighter.tileEntities.ClericsOvenEntity;
 import net.minecraft.block.Block;
+import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.IIntArray;
+import net.minecraft.util.IntArray;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
@@ -26,6 +30,14 @@ public class ModRegistry {
         blockRegisteryEvent.getRegistry().register(new ClericsOven());
     }
 
+    // Register Items
+    @SubscribeEvent
+    public static void onItemsRegistry(final RegistryEvent.Register<Item> itemRegistryEvent) {
+        Magelighter.LOGGER.info("Registering Blocks");
+        // Block Items
+        itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.CLERICSOVEN, new Item.Properties().group(magelighter)).setRegistryName(ModBlocks.CLERICSOVEN.getRegistryName()));
+    }
+
     // Register Tile Entities
     @SubscribeEvent
     public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> tileEntityRegistryEvent) {
@@ -38,16 +50,7 @@ public class ModRegistry {
     public static void onContainerRegistry(final RegistryEvent.Register<ContainerType<?>> containerRegisteryEvent) {
         Magelighter.LOGGER.info("Registering Containers");
         containerRegisteryEvent.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {
-            BlockPos pos = data.readBlockPos();
-            return new ClericsOvenContainer(windowId, Magelighter.proxy.getClientWorld(), pos, inv, Magelighter.proxy.getClientPlayer());
+            return new ClericsOvenContainer(windowId, inv);
         }).setRegistryName("clerics_oven"));
-    }
-
-    // Register Items
-    @SubscribeEvent
-    public static void onItemsregistry(final RegistryEvent.Register<Item> itemRegistryEvent) {
-        Magelighter.LOGGER.info("Registering Blocks");
-        // Block Items
-        itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.CLERICSOVEN, new Item.Properties().group(magelighter)).setRegistryName(ModBlocks.CLERICSOVEN.getRegistryName()));
     }
 }

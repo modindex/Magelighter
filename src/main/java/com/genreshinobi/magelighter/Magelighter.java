@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 @Mod("magelighter")
 public class Magelighter {
     // Directly reference log4j logger
-    static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     // Set the MODID
     public static final String MODID = "magelighter";
@@ -23,7 +23,7 @@ public class Magelighter {
     static final ItemGroup magelighter = new ModCreativeTab();
 
     // Declare the Proxies
-    static IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
+    public static IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
 
     public Magelighter() {
         // register the setup method for modloading

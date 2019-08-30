@@ -1,0 +1,9 @@
+{
+  "type": "magelighter:byproduct",
+  "ingredient": {
+    "item": "minecraft:apple"
+  },
+  "result": "minecraft:baked_potato",
+  "experience": 0.35,
+  "cookingtime": 200
+}
