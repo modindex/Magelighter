@@ -36,9 +36,10 @@ import java.util.Random;
 public class ClericsOven extends AbstractFurnaceBlock {
 
     // TODO: Clerics Oven - Add Recipes
-    // TODO: Clerics Oven - Fuel Slot
-    // TODO: Clerics Oven - Input Slot - No Ore
-    // TODO: Clerics Oven - Output Slot - Recipes, begin with normal wood > coal then clay jars.
+    // TODO: Clerics Oven - Limit the Input Slot - No Ore
+    // TODO: Clerics Oven - Recipes - Add Recipe for Clay Jars
+    // TODO: Clerics Oven - Recipes - Determine the Byproducts
+    // TODO: Clerics Oven - Do a another pass on the Oven Model to make it a solid block again
     // TODO: Clerics Oven - By Product Slot - Only Accepts Jars
     // TODO: Clerics Oven - By Product Output - Only By Products
 

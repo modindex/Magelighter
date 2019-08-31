@@ -19,12 +19,22 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @OnlyIn(Dist.CLIENT)
 public class ClericsOvenScreen extends ContainerScreen<ClericsOvenContainer> {
 
-    // TODO: Figure out what's going on with the Recipe Book. Crashing on Click.
+    // TODO: Figure out what's going on with the Recipe Book. Crashing on Click. Removed for now to prevent crash.
 
     private static final ResourceLocation GUI = new ResourceLocation(Magelighter.MODID, "textures/gui/clerics_oven.png");
 
     public ClericsOvenScreen(ClericsOvenContainer container, PlayerInventory inv, ITextComponent name) {
         super(container, inv, name);
+    }
+
+    /**
+     * Draw the foreground layer for the GuiContainer (everything in front of the items)
+     */
+    @Override
+    protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+        String s = this.title.getFormattedText();
+        this.font.drawString(s, 8.0f, 6.0F, 4210752);
+        this.font.drawString(this.playerInventory.getDisplayName().getFormattedText(), 8.0F, (float)(this.ySize - 96 + 2), 4210752);
     }
 
     @Override
