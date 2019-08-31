@@ -1,6 +1,7 @@
 package com.genreshinobi.magelighter.item.crafting;
 
 import com.genreshinobi.magelighter.Magelighter;
+import com.genreshinobi.magelighter.ModItems;
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Table;
@@ -21,8 +22,14 @@ public class ByProductRecipes {
     }
 
     private ByProductRecipes() {
-        addByProductRecipe(new ItemStack(Items.OAK_LOG), new ItemStack(Items.APPLE), new ItemStack(Items.POTATO), 5.0F);
-        addByProductRecipe(new ItemStack(Items.BIRCH_LOG), new ItemStack(Items.APPLE), new ItemStack(Items.POTATO), 5.0F);
+        addByProductRecipe(new ItemStack(Items.POTATO), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
+        addByProductRecipe(new ItemStack(Items.CHICKEN), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
+        addByProductRecipe(new ItemStack(Items.COD), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
+        addByProductRecipe(new ItemStack(Items.MUTTON), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
+        addByProductRecipe(new ItemStack(Items.PORKCHOP), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
+        addByProductRecipe(new ItemStack(Items.SALMON), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
+        addByProductRecipe(new ItemStack(Items.RABBIT), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
+        addByProductRecipe(new ItemStack(Items.BEEF), new ItemStack(ModItems.JAR), new ItemStack(ModItems.ASHENFOND), 0F);
     }
 
     public void addByProductRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience) {

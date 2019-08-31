@@ -10,4 +10,7 @@ public class ModItems {
 
     @ObjectHolder("magelighter:jar")
     public static Item JAR;
+
+    @ObjectHolder("magelighter:ashen_fond")
+    public static Item ASHENFOND;
 }

@@ -33,6 +33,7 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.CLERICSOVEN, new Item.Properties().group(magelighter)).setRegistryName(ModBlocks.CLERICSOVEN.getRegistryName()));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(magelighter)).setRegistryName("jar_clay"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(magelighter)).setRegistryName("jar"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(magelighter)).setRegistryName("ashen_fond"));
     }
 
     // Register Tile Entities

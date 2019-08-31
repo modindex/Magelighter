@@ -1,6 +1,7 @@
 package com.genreshinobi.magelighter.inventory.container;
 
 import com.genreshinobi.magelighter.ModBlocks;
+import com.genreshinobi.magelighter.ModItems;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -166,7 +167,7 @@ public class ClericsOvenContainer extends RecipeBookContainer<IInventory> {
     }
 
     protected boolean isJar(ItemStack itemStack) {
-        return itemStack.getItem() == Items.APPLE;
+        return itemStack.getItem() == ModItems.JAR;
     }
 
     @OnlyIn(Dist.CLIENT)
