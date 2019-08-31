@@ -157,8 +157,8 @@ public class ClericsOvenContainer extends RecipeBookContainer<IInventory> {
         return itemstack;
     }
 
-    protected boolean func_217057_a(ItemStack p_217057_1_) {
-        return this.world.getRecipeManager().getRecipe((IRecipeType)this.recipeType, new Inventory(p_217057_1_), this.world).isPresent();
+    protected boolean func_217057_a(ItemStack itemStack) {
+        return this.world.getRecipeManager().getRecipe((IRecipeType)this.recipeType, new Inventory(itemStack), this.world).isPresent();
     }
 
     protected boolean isFuel(ItemStack itemStack) {

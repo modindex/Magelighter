@@ -2,7 +2,7 @@
   "parent": "block/orientable",
   "textures": {
     "top": "magelighter:block/dark_stone_top",
-    "front": "magelighter:block/dark_stone_front",
+    "front": "magelighter:block/dark_stone_front_on",
     "side": "magelighter:block/dark_stone_side"
   }
 }
