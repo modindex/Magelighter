@@ -1,3 +1,5 @@
 {
-  "block.magelighter.clerics_oven": "Cleric's Oven"
+  "block.magelighter.clerics_oven": "Cleric's Oven",
+  "item.magelighter.jar_clay": "Unfired Clay Jar",
+  "item.magelighter.jar": "Clay Jar"
 }

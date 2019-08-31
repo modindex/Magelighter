@@ -4,15 +4,10 @@ import com.genreshinobi.magelighter.blocks.ClericsOven;
 import com.genreshinobi.magelighter.inventory.container.ClericsOvenContainer;
 import com.genreshinobi.magelighter.tileEntities.ClericsOvenEntity;
 import net.minecraft.block.Block;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.tileentity.TileEntityType;
-import net.minecraft.util.IIntArray;
-import net.minecraft.util.IntArray;
-import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -36,6 +31,8 @@ public class ModRegistry {
         Magelighter.LOGGER.info("Registering Blocks");
         // Block Items
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.CLERICSOVEN, new Item.Properties().group(magelighter)).setRegistryName(ModBlocks.CLERICSOVEN.getRegistryName()));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(magelighter)).setRegistryName("jar_clay"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(magelighter)).setRegistryName("jar"));
     }
 
     // Register Tile Entities

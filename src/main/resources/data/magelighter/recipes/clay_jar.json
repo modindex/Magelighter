@@ -1,9 +1,9 @@
 {
-  "type": "magelighter:byproduct",
+  "type": "minecraft:smelting",
   "ingredient": {
-    "item": "minecraft:apple"
+    "item": "magelighter:jar_clay"
   },
-  "result": "minecraft:baked_potato",
-  "experience": 0.35,
+  "result": "magelighter:jar",
+  "experience": 0,
   "cookingtime": 200
 }
